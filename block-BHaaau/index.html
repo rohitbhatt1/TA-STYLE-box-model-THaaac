@@ -13,3 +13,72 @@
 - Using CSS resets is necessary.
 - Use semantic tags and keep the nesting and indentation proper.
 --->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Model</title>
+    <link rel="stylesheet" href="./stylesheet/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>The Box Model, Box-sizing & Box-shadow </h1>
+    </header>
+    <hr>
+    <main>
+        <section class="f-1">
+            <h2>Exercise 1</h2>
+            <div class="box"></div>
+            <div class="marker-containor"></div>
+                <div class="marker">
+                    <span class="circle color"></span>
+                    <span>content</span>
+                </div>
+                <div class="marker">
+                    <span class="circle padding"></span>
+                    <span>padding</span>
+                </div>
+                <div class="marker">
+                    <span class="circle border"></span>
+                    <span>border</span>
+                </div>
+                <div class="marker">
+                    <span class="circle margin"></span>
+                    <span>margin</span>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2> Exercise 2 </h2>
+            <p>No border on these boxes.</p>
+            <div class="containor">
+                <div class="child-box"></div>
+                <div class="child-box"></div>
+                <div class="child-box"></div>
+            </div>
+            <hr>
+                <p>1px on these boxes.</p>
+            <div class="containor">
+                <div class="child-box border"></div>
+                <div class="child-box border"></div>
+                <div class="child-box border"></div>
+            </div>
+            <hr>
+            <p>1px border on these boxes but they are in the same line.</p>
+            <div class="containor">
+                <div class="child-box border border-box"></div>
+                <div class="child-box border border-box"></div>
+                <div class="child-box border border-box"></div>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
